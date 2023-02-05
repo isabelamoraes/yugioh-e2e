@@ -22,14 +22,14 @@ const Card = ({ item }: Props) => {
     showCard({...item, visible: true})
   }
 
-  return <Container>
+  return <Container className='card'>
     <Content onClick={updateCard} style={{transform: !isVisible ? 'rotateY(0deg)' : 'rotateY(180deg)'}}>
       {!isVisible ?
-      <ZoneContent>
+      <ZoneContent className='hide'>
         <img src={item.type === 'Normal Monster' ? MonsterZone : SpellTrapZone}/>
       </ZoneContent>
       :
-      <CardContent>
+      <CardContent className='visible'>
         <img src={item.imageUrl}/>
       </CardContent>}
     </Content>

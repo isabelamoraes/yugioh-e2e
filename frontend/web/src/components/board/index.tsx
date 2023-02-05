@@ -8,14 +8,14 @@ const Board = () => {
   const {pack, isLoading} = usePackContext();
 
   if(isLoading){
-    return <Loader />
+    return <Loader className='loader' />
   }
 
-  return <Container>
-    <Pack>
+  return <Container className='pack'>
+    <Pack className='monster-pack'>
       {pack.monsterCards.map((item) => <Card item={item} key={item.id} />)}
     </Pack>
-    <Pack>
+    <Pack className='spell-trap-pack'>
       {pack.spellAndTrapCards.map((item) => <Card item={item} key={item.id} />)}
     </Pack>
   </Container>
