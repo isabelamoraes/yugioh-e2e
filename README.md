@@ -41,7 +41,7 @@ yarn run:android
 
 ```
 
-## 🟢 Cypress
+## 💻 Cypress
 
 The [Cypress](https://www.cypress.io/) was used to create E2E tests for web application as shown in the following image:
 
@@ -67,6 +67,6 @@ $ npm run test:mochawesome
 
 ```
 
-## 🟢 Detox
+## 📱 Detox
 
 @TODO
