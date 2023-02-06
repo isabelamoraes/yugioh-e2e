@@ -6,6 +6,11 @@
   Discover the cards available in your deck
 </h3>
 
+<p align="center">
+  <img alt="Web Application Demo" src="https://github.com/isabelamoraes/yugioh-e2e/blob/main/demo/web.gif?raw=true" width="70%">
+  <img alt="Mobile Application Demo" src="https://github.com/isabelamoraes/yugioh-e2e/blob/main/demo/mobile.gif?raw=true" width="23%">
+</p>
+
 ## 📁 Project
 
 This project was developed to explore the implementation of E2E automated tests in web and mobile applications through the Cypress and Detox libraries, respectively. 
@@ -61,3 +66,7 @@ $ npm run test:run
 $ npm run test:mochawesome
 
 ```
+
+## 🟢 Detox
+
+@TODO
