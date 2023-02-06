@@ -3,7 +3,7 @@
 </h2>
 
 <h3 align="center">
-  Discover the cards available in your deck
+  Discover the cards available in your pack
 </h3>
 
 <p align="center">
