@@ -25,7 +25,9 @@ describe('Yu-gi-oh! flow', () => {
     cy.request({
       method: 'GET',
       url: 'https://db.ygoprodeck.com/api/v7/cardinfo.php/'
-    })
+    }).then((res) => {
+      expect(res.status).to.be.equal(200);
+    });
     cy.get('.card').should('have.length', 8);
   })
 })
