@@ -6,7 +6,8 @@
   "scripts": {
     "run:web": "yarn workspace @yugioh-e2e/web start",
     "run:mobile": "yarn workspace @yugioh-e2e/mobile start",
-    "run:android": "yarn workspace @yugioh-e2e/mobile android"
+    "run:android": "yarn workspace @yugioh-e2e/mobile android",
+    "run:detox": "yarn workspace @yugioh-e2e/mobile detox"
   },
   "workspaces": {
     "packages": [
