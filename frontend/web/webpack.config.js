@@ -7,7 +7,10 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 module.exports = {
   mode: isDevelopment ? 'development' : 'production',
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      react: path.resolve('../../node_modules/react'),
+    }
   },
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   module: {
