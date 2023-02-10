@@ -34,10 +34,10 @@ $ yarn
 $ yarn run:web
 
 # Start the mobile application
-yarn run:mobile
+$ yarn run:mobile
 
 # Run the mobile application (Android)
-yarn run:android
+$ yarn run:android
 
 ```
 
@@ -69,4 +69,17 @@ $ npm run test:mochawesome
 
 ## 📱 Detox
 
-@TODO
+The [Detox](https://wix.github.io/Detox/) was used to create E2E tests for mobile application as shown in the following image:
+
+<img alt="Run e2e tests with Detox" src="https://github.com/isabelamoraes/yugioh-e2e/blob/main/demo/detox.gif?raw=true" width="100%">
+
+To run the tests, place from your command line:
+
+```bash
+# Start the mobile application
+$ yarn run:mobile
+
+# Run the test
+$ yarn run:detox
+
+```
