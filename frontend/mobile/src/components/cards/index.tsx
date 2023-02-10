@@ -10,15 +10,17 @@ import { Container, Image } from './styles';
 
 type Props = {
   item: CardProps;
+  index: number;
 }
 
-const Card = ({ item }: Props) => {
+const Card = ({ item, index }: Props) => {
   const {showCard} = usePackContext();
   const [isVisible, setIsVisible] = useState(false);
 
   const sourceZone = item.type === "Normal Monster" ? MonsterZone : SpellTrapZone;
   const sourceCard = {uri: item.imageUrl};
   const source = isVisible ? sourceCard : sourceZone;
+  const testID = item.type === "Normal Monster"
 
   const iconAnimationState = useAnimationState({
     start: {
@@ -44,8 +46,8 @@ const Card = ({ item }: Props) => {
   }, []);
 
   return (
-    <Container onPress={updateCard}>
-      <Image source={source} resizeMode="center" state={iconAnimationState}/>
+    <Container onPress={updateCard} testID={`card-${index}`} accessibilityLabel={isVisible ? 'visible' : 'hide'}>
+      <Image source={source} resizeMode="center" state={iconAnimationState} />
     </Container>
   )
 }

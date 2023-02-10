@@ -13,7 +13,7 @@ const Board = () => {
     return (
       <Container>
         <Background source={BackgroundImage}>
-          <Loader />
+          <Loader testID='loader' />
         </Background>
       </Container>
     )
@@ -21,11 +21,11 @@ const Board = () => {
 
   return <Container>
     <Background source={BackgroundImage}>
-      <Content>
-        {pack!.monsterCards.map((item) => <Card item={item} key={item.id} />)}
+      <Content testID='monster-pack'>
+        {pack!.monsterCards.map((item, index) => <Card item={item} index={index} key={item.id} />)}
       </Content>
-      <Content>
-        {pack!.spellAndTrapCards.map((item) => <Card item={item} key={item.id} />)}
+      <Content testID='spell-trap-pack'>
+        {pack!.spellAndTrapCards.map((item, index) => <Card item={item} index={index+2} key={item.id} />)}
       </Content>
     </Background>
   </Container>
