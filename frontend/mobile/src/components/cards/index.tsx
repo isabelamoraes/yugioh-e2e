@@ -20,7 +20,6 @@ const Card = ({ item, index }: Props) => {
   const sourceZone = item.type === "Normal Monster" ? MonsterZone : SpellTrapZone;
   const sourceCard = {uri: item.imageUrl};
   const source = isVisible ? sourceCard : sourceZone;
-  const testID = item.type === "Normal Monster"
 
   const iconAnimationState = useAnimationState({
     start: {

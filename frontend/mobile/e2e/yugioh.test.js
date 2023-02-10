@@ -3,10 +3,6 @@ describe('Yu-gi-oh! flow', () => {
     await device.launchApp();
   });
 
-  /*beforeEach(async () => {
-    await device.reloadReactNative();
-  });*/
-
   it('should have a monster pack', async () => {
     await expect(element(by.id('monster-pack'))).toBeVisible();
   });
